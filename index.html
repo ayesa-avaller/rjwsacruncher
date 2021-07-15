@@ -140,15 +140,15 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
-<p>The JWSACruncher can be easily runned with the function <code><a href="reference/cruncher_and_param.html">cruncher_and_param()</a></code>. To use it, the path to the “Bin” folder of the JWSACruncher has to be defined. For example, if the JWSACruncher is under <code>D:/jdemetra-cli-2.2.2/</code>:</p>
+<p>The JWSACruncher can be easily runned with the function <code><a href="reference/cruncher_and_param.html">cruncher_and_param()</a></code>. To use it, the path to the “Bin” folder of the JWSACruncher has to be defined. For example, if the JWSACruncher is under <code>D:/jdemetra-cli-2.2.3/</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op">(</span>cruncher_bin_directory <span class="op">=</span> <span class="st">"D:/jdemetra-cli-2.2.2/bin/"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op">(</span>cruncher_bin_directory <span class="op">=</span> <span class="st">"D:/jdemetra-cli-2.2.3/bin/"</span><span class="op">)</span></code></pre></div>
 <p>The export items can be changed with the function “default_matrix_item” and “default_tsmatrix_series”:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># To get the default values:</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/options.html">getOption</a></span><span class="op">(</span><span class="st">"default_matrix_item"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; [1] "period"       "span.start"   "span.end"     "span.n"      </span>
-<span class="co">#&gt; [5] "span.missing" "espan.start"</span>
+<span class="co">#&gt; [1] "period"       "span.start"   "span.end"     "span.n"       "span.missing"</span>
+<span class="co">#&gt; [6] "espan.start"</span>
 <span class="fu"><a href="https://rdrr.io/r/base/options.html">getOption</a></span><span class="op">(</span><span class="st">"default_tsmatrix_series"</span><span class="op">)</span>
 <span class="co">#&gt; [1] "y"    "t"    "sa"   "s"    "i"    "ycal"</span>
 <span class="co"># To only export the seasonally adjusted series and its forecasts:</span>
